@@ -54,5 +54,3 @@ def solution(room_dimensions, your_pos, guard_pos, max_bullet_distance):
     blocked_distances = list(map(lambda x: x[1], yourReplicas_final))
 
     return len([i[0] for i in guardReplicas_final if is_free(i, blocked_directions, blocked_distances)])
-
-print solution([300,275], [150,150], [185,100], 500)
